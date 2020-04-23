@@ -1,12 +1,12 @@
-// 16 ë²ˆ ë¬¸ì œ : íšŒë¬¸(palindrome) ì´ ë§ëŠ”ì§€ íŒë³„í•˜ëŠ” ë¬¸ì œ (ìŠ¤í˜ì´ìŠ¤, ëŒ€ë¬¸ì, êµ¬ë‘ì  ë“±ì€ ë¬´ì‹œí•´ì•¼í•¨ )
+// 16 ë²? ë¬¸ì œ : ?šŒë¬?(palindrome) ?´ ë§ëŠ”ì§? ?Œë³„í•˜?Š” ë¬¸ì œ (?Š¤?˜?´?Š¤, ???ë¬¸ì, êµ¬ë‘?  ?“±??? ë¬´ì‹œ?•´?•¼?•¨ )
 #include <stdio.h>
 #include <string.h>
 #include "normal_stack_charVer.h"
 
-int determine_palindrome(Stacktype *s, char *str)
+int determine_palindrome(Stacktype *s1, char *str)
 {
     int len = strlen(str), i;
-    char ch;
+    element ch;
     
     for (i = 0 ; i < len ; i++ )
     {
@@ -14,8 +14,8 @@ int determine_palindrome(Stacktype *s, char *str)
         if (ch == ' ' || ch == '\'')
             continue;
         else if ( ch >= 'A' && ch <= 'Z')
-            ch - ('A' - 'a');
-        push(s, ch);
+            ch = ch - ('A' - 'a');
+        push(s1, ch);
     }
     
     for ( i = 0; i < len ; i++)
@@ -24,8 +24,8 @@ int determine_palindrome(Stacktype *s, char *str)
         if (ch == ' ' || ch == '\'')
             continue;
         else if ( ch >= 'A' && ch <= 'Z')
-            ch - ('A' - 'a');
-        if( pop(s) != ch );
+           ch = ch - ('A' - 'a');
+        if( pop(s1) != ch )
             return 0;
     }
     
@@ -35,13 +35,13 @@ int determine_palindrome(Stacktype *s, char *str)
 int main (void)
 {
     int a;
-    char str[30] = "madam";
+    char str[30] = "madam I'm Adam";
     Stacktype s1;
     init_stack(&s1);
     a = determine_palindrome(&s1, str);
     if (a == 1)
         printf("It is palindrome\n");
     else
-        printf("It isn't palindrome");
+        printf("It isn't palindrome\n");
     return 0;
 }
