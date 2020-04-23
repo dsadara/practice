@@ -43,16 +43,33 @@ void maze_printf(char maze[MAZE_SIZE][MAZE_SIZE])
     }
 }
 
+void print_path(Stacktype *p)
+{
+    int i, r, c, count = p -> top + 1;
+    element e;
+    printf("출구에서 입구까지 경로 출력 \n");
+    for ( i = 0 ; i < count ; i++)
+    {
+        e = pop(p);
+        r = (int)e.r; c = (int)e.c;
+        printf("(%d, %d)\n", r, c);
+
+    }
+}
+
 int main(void)
 {
     int r, c;
     Stacktype s;    // 이동이 가능한 칸들의 위치를 저장하는 스택
+    Stacktype path; // 입구부터 출구까지의 경로의 위치를 저장하는 스택
+    init_stack(&path);
     init_stack(&s);
     here = entry;   // ???  현재위치를 시작지점으로 한다고 명시하는 거 같다 
     while(maze[here.r][here.c] != 'x') { // 현재위치가 출구에 도달할 때 까지 반복 
         r = here.r;
         c = here.c;
         maze[r][c] = '.';
+        push(&path, here);  // 지나간 경로를 path 스택에 저장
         maze_printf(maze);
         push_loc(&s, r - 1, c); // 위
         push_loc(&s, r + 1, c); // 아래
@@ -69,5 +86,6 @@ int main(void)
         }
     }
     printf("성공\n");
+    print_path(&path);
     return 0;
 }
