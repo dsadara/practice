@@ -3,7 +3,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX_QUEUE_SIZE 5
+#define MAX_QUEUE_SIZE 20
 typedef int element;
 typedef struct {
     element data[MAX_QUEUE_SIZE];
@@ -102,4 +102,11 @@ element get_rear(DequeType *q)          // 큐의 후단(rear) 에서 삭제하는 함수
     if (is_empty(q))
         error("큐가 공백 상태입니다");
     return q->data[q->rear];
+}
+
+element get_count(DequeType *q)
+{
+    if(is_empty(q))
+        error("큐가 공백상태입니다");
+    return ( q->rear - q->front + MAX_QUEUE_SIZE ) % MAX_QUEUE_SIZE;
 }

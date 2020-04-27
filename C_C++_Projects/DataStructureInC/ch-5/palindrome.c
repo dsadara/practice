@@ -7,20 +7,34 @@
 int determine_palindrome(DequeType *d, char *s)
 {
     int i, len = strlen(s);
-    char ch;
+    char ch, reverse[20];
     for(i = 0 ; i < len ; i++)
     {
         ch = *(s + i);
+        if (ch == ' ' || ch == '\'')
+            continue;
+        else if ( ch >= 'A' && ch <= 'Z')
+            ch = ch - ('A' - 'a');
         add_rear(d, ch);
     }
-
+    len = get_count(d);
+    for(i = 0 ; i < len ; i++)
+    {
+        reverse[i] = delete_rear(d);
+    }
+    reverse[len] = '\0';
+    if(strcmp(s, reverse) == 0) // palindrome ÀÌ¸י 
+        return 1;
+    else 
+        return 0; 
 }
 
 int main(void)
 {
     int res;
     DequeType d;
-    char str[20] = "madam";
+    init_deque(&d);
+    char str[20] = "madam I'm Adam";
     res = determine_palindrome(&d, str);
     if(res == 0)
         printf("It is not palindrome\n");
