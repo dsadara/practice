@@ -1,0 +1,13 @@
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\bin\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.exe
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\bin\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.deps.json
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\bin\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.runtimeconfig.json
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\bin\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.runtimeconfig.dev.json
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\bin\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.dll
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\bin\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.pdb
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\obj\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.csprojAssemblyReference.cache
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\obj\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.AssemblyInfoInputs.cache
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\obj\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.AssemblyInfo.cs
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\obj\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.csproj.CoreCompileInputs.cache
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\obj\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.dll
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\obj\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.pdb
+D:\Users\catnoir\Desktop\practice\Algorithms\Programmers_TruckCrossingBridge\obj\Debug\netcoreapp3.1\Programmers_TruckCrossingBridge.genruntimeconfig.cache

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{3D733159-BBEB-478C-8612-DD532B78830B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74A26644-4810-4CEE-80F0-077FB15E3F6E}"
+	ProjectSection(SolutionItems) = preProject
+		..\Programmers_TruckCrossingBridge.cs = ..\Programmers_TruckCrossingBridge.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programmers_TruckCrossingBridge", "Programmers_TruckCrossingBridge\Programmers_TruckCrossingBridge.csproj", "{54B50D6B-9AC1-4F09-A29B-A6E93837A33B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D733159-BBEB-478C-8612-DD532B78830B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D733159-BBEB-478C-8612-DD532B78830B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D733159-BBEB-478C-8612-DD532B78830B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D733159-BBEB-478C-8612-DD532B78830B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B50D6B-9AC1-4F09-A29B-A6E93837A33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B50D6B-9AC1-4F09-A29B-A6E93837A33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B50D6B-9AC1-4F09-A29B-A6E93837A33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B50D6B-9AC1-4F09-A29B-A6E93837A33B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB4CA153-C153-4D38-B1A3-AA53BAD4E26B}
+	EndGlobalSection
+EndGlobal
